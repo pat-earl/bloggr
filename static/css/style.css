@@ -1,20 +1,20 @@
 @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/static/webfonts/JetBrainsMono-Light.woff2') format('woff2');
+    font-family: 'Roboto';
+    src: url('/static/webfonts/Roboto/Roboto-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/static/webfonts/JetBrainsMono-ExtraBold.woff2') format('woff2');
+    font-family: 'Roboto';
+    src: url('/static/webfonts/Roboto/Roboto-Bold.ttf') format('ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('/static/webfonts/JetBrainsMono-LightItalic.woff2') format('woff2');
+    font-family: 'Roboto';
+    src: url('/static/webfonts/Roboto/Roboto-BoldItalic.ttf') format('ttf');
     font-weight: bold;
     font-style: italic;
 }
@@ -22,7 +22,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Roboto', monospace;
     background-color: #181c1f;
     color: #cccccc;
     line-height: 1.6;
@@ -113,14 +113,14 @@ body, html {
 }
 
 a {
-    color: #fb3a6a;
+    color: #5ADD39;
     font-weight:500;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .sidebar a:hover, .right-sidebar a:hover {
-    color: #f5bfcd;
+    color: #86FF67;
 }
 
 .right-sidebar {
@@ -159,7 +159,7 @@ a {
 }
 
 a {
-    color: #f76a8d;
+    color: #5ADD39;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -187,7 +187,8 @@ a {
 }
 
 .sidebar li.active a{
-    color: #f5bfcd;
+    /* color: #5ADD39; */
+    color: #48FB1B;
 }
 
 .main-content img {
