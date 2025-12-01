@@ -1,12 +1,12 @@
 FROM golang:alpine
 
-RUN adduser -h /bloggr -S bloggr bloggr
+RUN addgroup bloggr && adduser -h /bloggr -S bloggr bloggr
 
 WORKDIR /bloggr
 
-COPY --chown=bloggr:bloggr . .
+COPY --chown=bloggr:bloggr --exclude=.git*/ . .
 
-RUN go build .
+RUN go build . && rm -rf /cache
 
 USER 1000
 EXPOSE 8080
